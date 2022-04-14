@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Eesh Kumar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+        
+    <div class="sidebar" id="sidebar">
+        <span id="toggleIn" onclick="toggle()">&times;</span>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/intro.html">Intro</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="main" id="main">
+        <span id="toggleOut" onclick="toggle()">&#9776;</span>
+        <div class="contactform">
+            <h1>Contact me for </h1>
+            
+            <form>
+                <div class="mb-3">
+                    <label for="clientName">Name</label>
+                    <input type="name" class="form-control" id="clientName" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+                  </div><div class="mb-3">
+                    <label for="clientemail">Email address</label>
+                    <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                    </div>
+                <div class="mb-3">
+                  <label for="clientphone">Phone</label>
+                  <input type="phone" class="form-control" id="clientphone">
+                </div>
+                <div class="mb-3">
+                    <label for="query">Query</label>
+                    <input type="text" class="form-control" id="query">
+                  </div>
+                <div class="mb-3" id="form-check">
+                  <input type="checkbox" class="form-check-input" id="isclient">
+                  <label class="form-check-label" for="isclient">I WANT YOU TO WORK ON A PROJECT.</label>
+                </div>
+                <br/>
+                <button type="submit" class="btn btn-sm">Submit</button>
+              </form>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+}
+
+.sidebar{
+    background-color: #111;
+    width: 20%;
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: 0.5s;
+}
+#toggleOut{
+    cursor:pointer;
+    color:white;
+    font-size: 30px;
+    width: 0;
+}
+#toggleIn{
+    cursor:pointer;
+    color:white;
+    font-size: 30px;
+}
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 12px 0;
+}
+.sidebar nav li a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+.sidebar nav li a:hover{
+    color: rgb(128, 119, 119);
+  }
+
+
+
+.main{
+    /* background-color: yellow; */
+    width: 80%;
+}
+
+.infoContainer{
+    /* background-color: green; */
+    height: 58vh;
+    width: 60vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.introContainer{
+    /* background-color: green; */
+    padding-top: 60px;
+    height: wrap;
+    width: 60vw;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello{
+    font-size: 65px;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+.about{
+    font-size:30px;
+}
+.moreabout{
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color:white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 3px;
+    cursor:pointer;
+}
+.btn-sm{
+    font-size: 17px;
+}
+.btn:hover{
+    background-color:white;
+    color: dodgerblue;
+}
+.devPic img{
+    height: 58vh;
+}
+
+.contactform{
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0 10vw;
+    padding-top: 144px;
+
+}
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+.contactform form div{
+    padding: 1px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width:21vw;
+    border-radius: 5px;
+    margin: 6px 0;
+    padding: 3px;
+}
+
+#emailHelp{
+    font-size:11px;
+    color:midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check {
+    flex-direction: row;
+
+}
+#form-check input{
+    width: 30px;
+    margin: 3px 0;
+}
+
+@media (max-width : 760px){
+    *{
+    }
+    .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    }
+}
